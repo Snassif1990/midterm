@@ -13,14 +13,17 @@ Note: This problem should account for negative number input
 */
 
 function sumOfOdds(){
-
+    let num1 = 10;
+    let num2 = 25;
+    let sum = num1 + num2;
+    return sum;
 }
 
 /* console.logs to test */
 console.log("sumOfOdds");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(sumOfOdds())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
 /*
@@ -31,14 +34,20 @@ You can assume the arrays that are being input are of the same length
 */
 
 function arraySubtract(){
-
+    var x = [7, 9],
+        y = [2, 6],
+        z = [];
+    for (var i=0; i<=y.length-1; i++){
+        z.push(x[i] - y[i]);
+    }
+    return z;
 }
 
 /* console.logs to test */
 console.log("arraySubtract");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(arraySubtract())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
 
@@ -50,14 +59,19 @@ Return the modified array
 */
 
 function surroundArray(){
-
+    let arr = [];
+    let str1 = 'Bob';
+    let str2 = 'Marge';
+    arr.push(str2);
+    arr.unshift(str1);
+    return arr;
 }
 
 /* console.logs to test */
 console.log("surroundArray");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(surroundArray())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
 
@@ -68,14 +82,23 @@ You can assume that no two strings will have the same length in the array
 */
 
 function longestString(){
-    
+    let strArr = ['dog', 'cat', 'horse', 'giraffe']
+      for (var i = 1; i < strArr.length; i ++) {
+        if (strArr[i] > strArr[i]) {
+          done = false;
+          let tmp = strArr[i];
+          strArr[i] = strArr[i];
+          strArr[i] = tmp;
+        }
+      }
+    return strArr[0];
 }
 
 /* console.logs to test */
 console.log("longestString");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(longestString())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
 
@@ -86,14 +109,30 @@ Do NOT use replaceAll or similar string methods.  If you are unsure what that me
 */
 
 function sToR(){
-
+    const str = "supercalifragilisticexpialidocious"
+    let searchs = 's';
+    let searchS = 'S';
+    let searchr = 'r';
+    let searchR = 'R';
+    if (str.includes('s')){
+        return str.split(searchs).join(searchr);
+    } 
+    if (str.includes('r')){
+        return str.split(searchr).join(searchs)
+    } 
+    if (str.includes('S')){
+        return str.split(searchS).join(searchR)
+    } 
+    if (str.includes('R')){
+        return str.split(searchR).join(searchS)
+    }
 }
 
 /* console.logs to test */
 console.log("sToR");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(sToR())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
 
@@ -103,14 +142,19 @@ If it is not, return false.
 */
 
 function divisibleBy4And7(){
-
+    let num = 28;
+    if ((num % 7 ===0) && (num % 4 ===0)){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 /* console.logs to test */
 console.log("divisibleBy4And7");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(divisibleBy4And7())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
 
@@ -121,14 +165,19 @@ Return false if otherwise
 */
 
 function exclamationAndQuestion(){
-    
+    let str = "Omg! its a giant lizard! Is it going to eat everyone?"
+    if (str.includes('?') && str.includes('!')){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 /* console.logs to test */
 console.log("exclamationAndQuestion");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(exclamationAndQuestion())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
 
@@ -139,14 +188,21 @@ Your function should account for both cases (upper and lower) of each letter.
 */
 
 function countAB(){
+    let str = ['a,a,a,b,b,b,c,c,c,d,d,d,e,e,e,f,f,f']
+    let objA = 'a';
+    let objB = 'b';
 
+    //var countA = str.split(objA).length - 1;
+    //var countB = str.split(objB).length -1;
+
+    //return countA, countB;
 }
 
 /* console.logs to test */
 console.log("countAB");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(countAB())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
 
@@ -158,7 +214,6 @@ Example: addStringIfLastS(['test', 'testing', 'testings'], 'TEST') => ['test', '
 */
 
 function addStringIfLastS(){
-
 }
 
 /* console.logs to test */
@@ -177,13 +232,13 @@ You can assume that every number in the array will be unique
 */
 
 function twoSmallest(){
-
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 }
 
 /* console.logs to test */
 console.log("twoSmallest");
 console.log("////////////////////////////////////////////////////////////////////////////\n");
 //Add console.logs here to test!  Feel free to format this section however you like
-
+console.log(twoSmallest())
 console.log("\n////////////////////////////////////////////////////////////////////////////\n");
 
