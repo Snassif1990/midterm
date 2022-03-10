@@ -12,9 +12,9 @@ You can assume that the 2nd number passed in will always be greater than the fir
 Note: This problem should account for negative number input
 */
 
-function sumOfOdds(){
-    let num1 = 10;
-    let num2 = 25;
+function sumOfOdds(num1, num2){
+    num1 = 10;
+    num2 = 25;
     let sum = num1 + num2;
     return sum;
 }
@@ -33,10 +33,10 @@ For exmaple arraySubtract([7,9],[2,6]) should return [5,3]
 You can assume the arrays that are being input are of the same length
 */
 
-function arraySubtract(){
-    var x = [7, 9],
-        y = [2, 6],
-        z = [];
+function arraySubtract(x, y){
+    x = [7, 9],
+    y = [2, 6],
+    z = [];
     for (var i=0; i<=y.length-1; i++){
         z.push(x[i] - y[i]);
     }
@@ -58,10 +58,10 @@ Add the second string to the end of the array
 Return the modified array
 */
 
-function surroundArray(){
-    let arr = [];
-    let str1 = 'Bob';
-    let str2 = 'Marge';
+function surroundArray(arr, str1, str2){
+    arr = [];
+    str1 = 'Bob';
+    str2 = 'Marge';
     arr.push(str2);
     arr.unshift(str1);
     return arr;
@@ -81,8 +81,8 @@ If there is nothing in the array, return an empty string ('')
 You can assume that no two strings will have the same length in the array
 */
 
-function longestString(){
-    let strArr = ['dog', 'cat', 'horse', 'giraffe']
+function longestString(strArr){
+    strArr = ['dog', 'cat', 'horse', 'giraffe']
       for (var i = 1; i < strArr.length; i ++) {
         if (strArr[i] > strArr[i]) {
           done = false;
@@ -187,8 +187,8 @@ No need to add the count of A and B together.  Again, we want an array with the 
 Your function should account for both cases (upper and lower) of each letter.
 */
 
-function countAB(){
-    let str = ['a,a,a,b,b,b,c,c,c,d,d,d,e,e,e,f,f,f']
+function countAB(str){
+    str = ['a,a,a,b,b,b,c,c,c,d,d,d,e,e,e,f,f,f']
     let objA = 'a';
     let objB = 'b';
 
@@ -231,8 +231,8 @@ If the array is shorter than length 2, return undefined to the user
 You can assume that every number in the array will be unique
 */
 
-function twoSmallest(){
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+function twoSmallest(arr){
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 }
 
 /* console.logs to test */
